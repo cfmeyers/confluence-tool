@@ -1,0 +1,10 @@
+    {
+      "confluence_tool/*.py": {
+        "alternate": "tests/test_{}.py",
+        "type": "source"
+      },
+      "tests/test_{}.py": {
+        "alternate": "confluence_tool/*.py",
+        "type": "test"
+      }
+    }
