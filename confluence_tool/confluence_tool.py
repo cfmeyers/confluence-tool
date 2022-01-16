@@ -6,12 +6,8 @@ import json
 import os
 from typing import Dict, List, NamedTuple, Optional
 
-from bs4 import BeautifulSoup
-from rich import pretty
-
-pretty.install()
-
 from atlassian import Confluence
+from bs4 import BeautifulSoup
 
 
 def get_summary(body: str) -> str:
