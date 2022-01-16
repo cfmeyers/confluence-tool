@@ -8,7 +8,7 @@ from setuptools import find_packages, setup
 with open("README.md") as readme_file:
     readme = readme_file.read()
 
-requirements = ["Click>=6.0", "atlassian-python-api"]
+requirements = ["Click>=6.0", "atlassian-python-api", "beautifulsoup4"]
 
 setup_requirements = [
     "pytest-runner",
@@ -31,7 +31,7 @@ setup(
     description="A tool for dealing with Confluence on the command line",
     entry_points={
         "console_scripts": [
-            "confluence-tool=confluence_tool.cli:main",
+            "confluence-tool=confluence_tool.cli:cli",
         ],
     },
     install_requires=requirements,
